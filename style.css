@@ -7,6 +7,7 @@
     text-decoration: none;
     box-sizing: border-box;
     list-style: none;
+    font-family: "Poppins", sans-serif;
 }
 
 /* Definicio de variables */
@@ -19,10 +20,45 @@
     --bg-white: #fff;
     --bg-electric: #f0fbff;
     --nav-bg: #0f1525;
-    
+
+    /* Text colors */
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+
+    /* Decoracion */
+    --fire: #ff6d00;
+    --electric: #64d3ff;
 }
 
+/* Body */
 body{
     background-color: var(--background);
 }
+
+/* Header */
+header{
+    display: flex;
+    background-color: var(--secondary);
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.navbar, 
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 1rem = 16px */
+.navbar{
+    gap: 2rem;
+}
+
+.navbar-list{
+    gap: 1rem;
+}
+
 
