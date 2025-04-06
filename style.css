@@ -1,2 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap');
 
+/* Reseteo de las variables */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/* Definicio de variables */
+:root{
+    --background: #131415;
+    --primary: #1e50ff;
+    --secondary: #272d37;
+    --btn-lg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-white: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+    
+}
+
+body{
+    background-color: var(--background);
+}
+
