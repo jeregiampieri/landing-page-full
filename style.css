@@ -58,7 +58,7 @@ header{
 
 /* 1rem = 16px */
 .navbar{
-    gap: 2rem;
+    gap: 4.5rem;
 }
 
 .navbar-list{
@@ -85,5 +85,7 @@ header{
     cursor: pointer;
     height: 20px;
 }
+
+
 
 
