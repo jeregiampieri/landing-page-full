@@ -106,7 +106,6 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 55px;
 }
 
 #hero .hero-info{
@@ -120,14 +119,38 @@ main{
     font-size: 48px;
     line-height: 59px;
     font-weight: 800;
-    background: #9840b8;
-    background: radial-gradient(circle,rgba(152, 64, 184, 1) 25%, rgba(89, 99, 212, 1) 100%);
+    background: #01578c;
+    background: linear-gradient(90deg,rgba(1, 87, 140, 1) 0%, rgba(4, 127, 194, 1) 73%, rgba(0, 112, 181, 1) 100%);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     width: 80%;
+    min-width: 500px;
 }
 
+.hero-info p span{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero-info p{
+    font-size: 14px;
+    width: 75%;
+    color: var(--text-gray);
+}
+
+.boton-hero{
+    background: #131415;
+    background: linear-gradient(90deg,rgba(19, 20, 21, 1) 0%, rgba(19, 20, 21, 1) 73%, rgba(0, 0, 0, 1) 100%);
+    color: var(--text-white);
+    /* Ajusta su ancho automaticamente en base al contenido que tiene dentro */
+    width: fit-content;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0.5px solid white;
+}
 
 
 /* #hero .hero-info{
