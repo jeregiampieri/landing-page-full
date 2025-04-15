@@ -155,12 +155,40 @@ main{
 /* Card del hero */
 
 .hero-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     background-color: #131415;
-    width: auto;
+    width: 300px;
     padding: 25px 25px;
     border: 1px solid white;
     border-radius: 1rem;
+    justify-content: center;
 }
+
+.hero-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-card-info-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-card-info-top h3{
+    font-weight: 600;
+    /* Esto es para que no haya salto de linea en el texto */
+    white-space: nowrap;
+    /* Estos dos comandos es para que se ponga ... cuando el texto es muy largo */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
 
 /* #hero .hero-info{
     color: white;
