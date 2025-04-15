@@ -152,6 +152,15 @@ main{
     border: 0.5px solid white;
 }
 
+/* Card del hero */
+
+.hero-card{
+    background-color: #131415;
+    width: auto;
+    padding: 25px 25px;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
 
 /* #hero .hero-info{
     color: white;
