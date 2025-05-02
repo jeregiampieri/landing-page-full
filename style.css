@@ -260,6 +260,19 @@ main{
     margin-top: 15%;
 }
 
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
 
+.info-cards-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
 
 
