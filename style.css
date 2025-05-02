@@ -411,35 +411,62 @@ main{
 /* Fin de la section 2 (info) */
 
 /* Comienzo de la section 3 */
-
-/* Estoy limitando el tamaño de la seccion, es decir, estoy haciendo
-que no ocupe todo el tamaño del viewport(pantalla) del usuario   */
 #discover{
+    /* Estoy limitando el tamaño de la seccion, es decir, estoy haciendo
+    que no ocupe todo el tamaño del viewport(pantalla) del usuario*/
     max-width: 1200px;
-    padding: 70px 0px;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
 }
 
 .discover-info{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: space-evenly;
     gap: 200px;
+    padding: 0px 20px;
 }
 
 .discover-info h3{
     font-size: 1.7rem;
     font-weight: 600;
+    width: 45%;
 }
 
 .discover-text{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    text-align: left;
+    width: 65%;
 }
 
 .discover-text p{
     color: var(--text-gray);
-    width: 80%;
+}
+
+.boton-discover{
+    background: #131415;
+    color: var(--text-white);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 0.5px solid white;
+    /* Adaptar el tamaño al texto que contiene dentro */
+    width: fit-content;
+    transition: all 1s ease;  
+}
+
+.boton-discover:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: #131415;
+}
+
+/* Maquetado de las cards de la section 3 */
+.discover-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
