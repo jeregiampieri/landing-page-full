@@ -408,5 +408,38 @@ main{
     color: #131415;
 }
 /* Fin card3 */
+/* Fin de la section 2 (info) */
 
+/* Comienzo de la section 3 */
 
+/* Estoy limitando el tamaño de la seccion, es decir, estoy haciendo
+que no ocupe todo el tamaño del viewport(pantalla) del usuario   */
+#discover{
+    max-width: 1200px;
+    padding: 70px 0px;
+}
+
+.discover-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 200px;
+}
+
+.discover-info h3{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.discover-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.discover-text p{
+    color: var(--text-gray);
+    width: 80%;
+}
