@@ -278,8 +278,9 @@ main{
 .info-cards-container{
     display: flex;
     gap: 50px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 1100px;
 }
 
 
@@ -288,15 +289,8 @@ main{
     background-color: var(--secondary);
     width: 300px;
     height: 290px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 40px 30px;
 }
 
-.card1 img{
-    width: 50px;
-
-}
 /* Fin card1 */
 
