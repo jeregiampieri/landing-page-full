@@ -251,21 +251,28 @@ main{
 .hero-card-price span{
     font-weight: 700;
 }
+/* Fin del section 1 */
 
-/* #hero .hero-info{
-    color: white;
-} */
-
-#info h1{
-    margin-top: 15%;
-}
-
+/* Comienzo de la section 2 (info) */
 #info{
     display: flex;
     flex-direction: column;
     gap: 80px;
     justify-content: center;
     align-items: center;
+    background-color: green;
+    /* Acá lo que busco es que haya un espacio entre el fin de la 
+    section1 y el comienzo de la section2*/
+    /* Forma 1 de hacerlo */
+    /* margin-top: 15%; */
+    /* Forma 2 de hacerlo (es una mejor prática) */
+    padding: 70px 0px;
+    max-width: 1200px;
+}
+
+#info h1{
+    font-size: 1.9rem;
+    font-weight: 600;
 }
 
 .info-cards-container{
@@ -275,4 +282,21 @@ main{
     align-items: center;
 }
 
+
+/* Card1 */
+.card1{
+    background-color: var(--secondary);
+    width: 300px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 img{
+    width: 50px;
+
+}
+/* Fin card1 */
 
