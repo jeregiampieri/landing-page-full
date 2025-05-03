@@ -470,3 +470,27 @@ main{
     align-items: center;
     gap: 30px;
 }
+
+.imagen-vader{
+    transition: all 0.5s ease;
+}
+
+.imagen-trooper{
+    transition: all 0.5s ease;
+}
+
+.imagen-yoda{
+    transition: all 0.5s ease;
+}
+
+.imagen-vader:hover{
+    padding: 0px 5px;
+}
+
+.imagen-trooper:hover{
+    padding: 0px 5px;
+}
+
+.imagen-yoda:hover{
+    padding: 0px 5px;
+}
