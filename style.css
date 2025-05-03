@@ -662,7 +662,7 @@ main{
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.5s ease;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 
@@ -672,3 +672,37 @@ main{
     border: 1px solid #131415;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+
+footer a, 
+footer p{
+    color: var(--text-gray);
+    font-size: 14px;
+}
+
+footer span{
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-footer ul li a{
+    transition: all 0.5s ease;
+}
+
+.navbar-footer ul li a:hover{
+    padding: 0px 10px;
+}
