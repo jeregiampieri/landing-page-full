@@ -511,7 +511,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 35px 0px;
-    gap: 25px;
+    gap: 35px;
 }
 
 #products h1{
@@ -544,10 +544,15 @@ main{
     border: 1px solid black;
 }
 
-/* Productos card1 */
+.products-productos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Productos cards */
 .productos-card1{
-    background: #01131a;
-    background: linear-gradient(90deg,rgba(1, 19, 26, 1) 0%, rgba(6, 25, 33, 1) 35%, rgba(28, 33, 38, 1) 100%);
+    background-color: #131415;
     border: 1px solid #ffffff49;
     border-radius: 25px;
     padding: 20px;
@@ -562,7 +567,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
 }
 
@@ -593,7 +598,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .productos-card1-middle-autor p{
@@ -612,7 +617,31 @@ main{
 
 .productos-card1-bottom-autor-time{
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.productos-card1-bottom button{
+    background-color: #1b2128;
+    border: 1px solid #ffffff49;
+    border-radius: 5px;
+    color: #fff;
+    width: fit-content;
+    padding: 10px 35px;
+    text-align: center;
+    cursor: pointer;    
+    transition: all 0.5s ease;
+}
+
+.productos-card1-bottom-autor-time img{
+    width: 20px;
+}
+
+.productos-card1-bottom button:hover{
+    background-color: #fff;
+    color: #131415;
+    border: 1px solid #131415;
 }
 
 
