@@ -142,7 +142,6 @@ main{
 
 .boton-hero{
     background: #131415;
-    background: linear-gradient(90deg,rgba(19, 20, 21, 1) 0%, rgba(19, 20, 21, 1) 73%, rgba(0, 0, 0, 1) 100%);
     color: var(--text-white);
     /* Ajusta su ancho automaticamente en base al contenido que tiene dentro */
     width: fit-content;
@@ -150,13 +149,14 @@ main{
     text-align: center;
     border-radius: 5px;
     cursor: pointer;
-    border: 0.5px solid white;
+    border: 0.5px solid #ffffff49;
+    transition: all 1s ease;
 }
 
 .boton-hero:hover{
-    box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.54);
-    -webkit-box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.54);
-    -moz-box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.54);
+    background-color: #fff;
+    color: #131415;
+    border: 1px solid #131415;
 }
 
 /* Card del hero */
@@ -452,9 +452,9 @@ main{
     background: #131415;
     color: var(--text-white);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 5px 35px;
     cursor: pointer;
-    border: 0.5px solid white;
+    border: 0.5px solid #ffffff49;
     /* Adaptar el tamaño al texto que contiene dentro */
     width: fit-content;
     transition: all 1s ease;  
@@ -561,6 +561,8 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
 }
 
 .productos-card1-contenido{
@@ -644,5 +646,27 @@ main{
     border: 1px solid #131415;
 }
 
+.productos-card1:hover{
+    box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.54);
+    -webkit-box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.54);
+    -moz-box-shadow: 0px 0px 2px 2px rgba(255,255,255,0.54);
+}
 
 
+.boton-ver-mas{
+    background-color: #131415;
+    border: 1px solid #ffffff49;
+    color: white;
+    width: fit-content;
+    padding: 10px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+
+.boton-ver-mas:hover{
+    background-color: #fff;
+    color: #131415;
+    border: 1px solid #131415;
+}
