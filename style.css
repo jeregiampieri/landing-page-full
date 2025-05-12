@@ -39,7 +39,8 @@ body{
 /* Header */
 header{
     display: flex;
-    background-color: var(--secondary);
+    background: #00293d;
+    background: linear-gradient(180deg,rgba(0, 41, 61, 1) 0%, rgba(19, 20, 21, 1) 57%, rgba(19, 20, 21, 1) 100%);
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -47,7 +48,6 @@ header{
     /* height: 10vh; */
     height: 65px;
     position: fixed;
-
 }
 
 .navbar, 
@@ -706,5 +706,33 @@ footer span{
 .navbar-footer ul li a:hover{
     padding: 0px 10px;
 }
+
+/* Carrito de compras */
+.carrito-contenedor h2{
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.carrito-contenedor{
+    position: absolute;
+    /* El espacio al costado se lo voy a dar con el padding */
+    right: 0;
+    top: 65px;
+    background: #00293d;
+    background: linear-gradient(0deg,rgba(0, 41, 61, 1) 0%, rgba(19, 20, 21, 1) 57%, rgba(19, 20, 21, 1) 100%);
+    padding: 50px 30px;
+    border-left: 1px solid var(--nav-bg);
+    /* Este calculo es para hacer una separación entre el menu del carrito
+    y el navbar */
+    height: calc(100vh - 65px);
+}
+
+/* Esto es para hacer desaparecer el checkbox del carrito, pero sigue
+funcionando */
+#carrito-toggle{
+    display: none;
+}
+
 
 /* Comienzo de web-responsive */
