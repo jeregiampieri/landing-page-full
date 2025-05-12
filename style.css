@@ -710,8 +710,8 @@ footer span{
 /* Carrito de compras */
 .carrito-contenedor h2{
     color: #fff;
-    font-weight: 500;
-    font-size: 15px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .carrito-contenedor{
@@ -726,7 +726,39 @@ footer span{
     /* Este calculo es para hacer una separación entre el menu del carrito
     y el navbar */
     height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Porque quiero el scroll unicamente en el eje vertical */
+    overflow-y: scroll;
+    display: none;
 }
+
+/* Estilado de la barra de navegación */
+/* Ancho de la barra */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Fondo de la barra (pista) */
+  /* Color de fondo de la barra */
+  ::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 10px;
+  }
+  
+  /* Parte que se mueve (el "thumb") */
+  /* Colro de la barra de navegacion */
+  ::-webkit-scrollbar-thumb {
+    background: #00718b;
+    border-radius: 10px;
+    border: 2px solid #1a1a1a;
+  }
+  
+  /* Al pasar el mouse sobre el thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00aacc;
+  }
 
 /* Esto es para hacer desaparecer el checkbox del carrito, pero sigue
 funcionando */
@@ -734,10 +766,12 @@ funcionando */
     display: none;
 }
 
-.carrito-contenedor{
+/* Para que se muestre todo el carrito cuando le doy click */
+/* Recordar que el + me sirve para seleccionar el hermano ADYASCENTE
+es decir, el elemento que le sigue al input en este caso que justamente
+es el carrito */
+#carrito-toggle:checked + .carrito-contenedor{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .carrito-items img{
@@ -777,21 +811,96 @@ funcionando */
 }
 
 .carrito-item-info span{
-    color: var(--text-gray);
-    font-size: 12px;
-    font-weight: 800;
+    color: var(--text-white);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.carrito-botones{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .resta{
     color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .cantidad{
     color: #fff;
+    padding: 5px;
 }
 
 .suma{
     color: #fff;
+    border: 1px solid #fff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
+
+.suma:hover{
+    background-color: #fff;
+    color: #131415;
+    border: 1px solid #131415;
+}
+
+.resta:hover{
+    background-color: #fff;
+    color: #131415;
+    border: 1px solid #131415;
+}
+
+.carrito-extras{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.barra-divisora{
+    width: auto;
+    height: 1px;
+    background-color: #fff;
+}
+
+.carrito-extras-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carrito-extras-total{
+    color: #fff;
+    font-size: 15px;
+}
+
+.carrito-extras-total h3{
+    font-weight: 400;
+}
+
+.boton-extras{
+    background-color: #131415;
+    border: 1px solid #ffffff49;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.boton-extras:hover{
+    background-color: #ffffff;
+    color: #131415;
+    border: 1px solid #131415;
+}
+/* Carrito terminado */
 
 /* Comienzo de web-responsive */
