@@ -1,0 +1,37 @@
+/* Comienzo de las mediaqueries */
+/* Significa que desde 0px hasta 992px se van a aplicar todos
+los estilos que coloque en esta @media */
+/* MEDIDA PARA TABLET */
+@media (max-width: 992px){
+    .navbar{
+        gap: 15px;
+    }
+    /* Esta parte del navbar (Home,Descubre,etc) tiene que verse de 
+    otra forma cuando estamos en tablet y/o mobile, por lo tanto vamos 
+    a modificarlo*/
+    .navbar-list{
+        /* Esto es para sacarlo del flujo del documento (es decir,
+        ya no ocupa espacio como los elementos comunes)*/
+        position: absolute;
+        top: 65px;
+        width: 90%;
+        border: 2px solid rgba(0, 41, 61, 1);
+        border-top: 0;
+        left: 5%;
+        right: 5%;
+        /* Ni hace falta que le ponga el display:flex, ya que todo esto
+        eso se esta heredando desde el style.css, por lo tanto solo coloco
+        lo que necesito */
+        flex-direction: column;
+        background-color: #151615;
+        /* Arriba a la derecha, arriba a la izquierda, abajo a la derecha, abajo a la izquierda */
+        border-radius: 0px 0px 15px 15px;
+        padding: 40px 30px;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .navbar-list a{
+        font-size: 17px;
+    }
+}

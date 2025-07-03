@@ -279,6 +279,7 @@ main{
     display: flex;
     gap: 50px;
     justify-content: space-around;
+    /* flex-wrap: wrap; */
     align-items: center;
     width: 1100px;
 }
@@ -762,7 +763,11 @@ footer span{
 
 /* Esto es para hacer desaparecer el checkbox del carrito, pero sigue
 funcionando */
-#carrito-toggle{
+#carrito-toggle,
+#menu-toggle,
+/* Ocultamos el menu label porque en vista de PC no necesitamos el menu
+solamente lo mostramos cuando estamos en mobile/tablet */
+.menu-label{
     display: none;
 }
 
@@ -903,4 +908,4 @@ es el carrito */
 }
 /* Carrito terminado */
 
-/* Comienzo de web-responsive */
+

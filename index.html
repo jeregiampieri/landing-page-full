@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Es para que se aplique al HTML todos los cambios que se hacen en el archivo
+     de mediaqueries.css -->
+    <link rel="stylesheet" href="./mediaqueries.css">
 </head>
 
 <body>
@@ -25,7 +28,14 @@
         <!-- Navbar (como estos son los items de navegación
         defino acá el navbar) -->
         <nav class="navbar">
+            <!-- Agrego el input label para la funcionalidad del menu -->
+             <label for="menu-toggle" class="menu-label">
+                <img src="./img/menus.png" alt="Icono del menu">
+             </label>
+             <input type="checkbox" id="menu-toggle">
             <ul class="navbar-list">
+                <!-- a href se usa para cuando le hacemos click a uno de los items
+                 de la lista, nos dirija automaticamente a esa seccion que queremos -->
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#info">Descubre</a></li>
                 <li><a href="#discover">BTC</a></li>
