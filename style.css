@@ -109,7 +109,7 @@ main{
     align-items: center;
 }
 
-#hero .hero-info{
+.hero-info{
     display: flex;
     flex-direction: column;
     gap: 20px;
