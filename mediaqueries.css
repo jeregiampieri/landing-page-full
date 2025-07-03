@@ -78,13 +78,15 @@ los estilos que coloque en esta @media */
         text-align: center;
     }
 
-    .info-cards-container{
-        max-width: 50%;
+    .info-cards-container {
+        width: 100%;
+        max-width: 90%;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     /* Descubre  */
-    
+
     .discover-info{
         flex-direction: column;
         text-align: center;
@@ -108,5 +110,37 @@ los estilos que coloque en esta @media */
     }
 
     /* Productos */
+    .products-categorias {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products-productos{
+        justify-content: center;
+    }    
+}
+
+@media (max-width: 576px ) {
+    .carrito-contenedor{
+        width: 100%;
+        left: 0;
+        border: none;
+    }
+
+    .carrito-items{
+        flex-wrap: wrap;
+    }
+
+    .hero-info{
+        width: 100%;
+    }
+
+    .hero-info .hero-info-h1 {
+        width: 90%;
+        min-width: unset;
+        font-size: 32px;
+        line-height: 40px;
+    }
 
 }

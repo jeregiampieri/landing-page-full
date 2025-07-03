@@ -101,7 +101,7 @@ main{
 }
 
 #hero{
-    max-width: 1200px;
+    width: 100%;
     margin-top: 65px;
     padding: 70px 20px;
     display: flex;
@@ -267,7 +267,7 @@ main{
     /* margin-top: 15%; */
     /* Forma 2 de hacerlo (es una mejor prática) */
     padding: 70px 0px;
-    max-width: 1200px;
+    width: 100%;
 }
 
 #info h1{
@@ -416,7 +416,7 @@ main{
 #discover{
     /* Estoy limitando el tamaño de la seccion, es decir, estoy haciendo
     que no ocupe todo el tamaño del viewport(pantalla) del usuario*/
-    max-width: 1200px;
+    width: 100%;
     padding: 30px 0px;
     display: flex;
     flex-direction: column;
@@ -506,7 +506,7 @@ main{
 /* Comienzo de la sección 4 */
 
 #products{
-    max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -549,6 +549,7 @@ main{
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Productos cards */
@@ -680,6 +681,7 @@ footer{
     align-items: center;
     gap: 30px;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 footer a, 
