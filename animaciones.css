@@ -1,0 +1,4 @@
+/* Esto hace que el scroll hacia las secciones sea suave */
+html{
+    scroll-behavior: smooth;
+}
