@@ -1,4 +1,43 @@
 /* Esto hace que el scroll hacia las secciones sea suave */
 html{
     scroll-behavior: smooth;
+    /* Sirve para que cuando se haga scroll hacia una seccion
+    el navbar no tape cosas de la pagina */
+    scroll-padding-top: 65px;
 }
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    /* Para que no me tape justamente el navbar */
+    top: 65px;
+    left: 0;
+    /* Esto son capas, queremos que tape todo menos el carro
+    por lo tanto a este le vamos a asignar la capa 1 mientras que 
+    al carro le vamos a asignar la capa 2 */
+    /* Voy hacer lo mismo para el menu */
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(0, 0, 0, 0.5),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1),
+        inset 0 0 0px 0px rgba(255, 255, 255, 0);
+    overflow: hidden;
+    display: none;
+}
+
+#carrito-toggle:checked ~ .overlay{
+    display: flex;
+}
+
+#menu-toggle:checked ~ .overlay{
+    display: flex;
+}
+
+

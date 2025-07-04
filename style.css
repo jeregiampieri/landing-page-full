@@ -64,6 +64,9 @@ header{
 
 .navbar-list{
     gap: 1rem;
+    /* Para que el efecto de borrado no tape el navbar,
+    explicado en el div overlay en animaciones.css */
+    z-index: 2;
 }
 
 .navbar-list a{
@@ -736,6 +739,9 @@ footer span{
     overflow-y: scroll;
     transform: translate(200%);
     transition: all 0.5s ease;
+    /* Para que el efecto de borrado no tape al carro,
+    revisar el div overlay en animaciones.css */
+    z-index: 2;
 }
 
 /* Estilado de la barra de navegación */
