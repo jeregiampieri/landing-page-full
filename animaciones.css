@@ -33,11 +33,11 @@ html{
 }
 
 #carrito-toggle:checked ~ .overlay{
-    display: flex;
+    display: block;
 }
 
 #menu-toggle:checked ~ .overlay{
-    display: flex;
+    display: block;
 }
 
 
