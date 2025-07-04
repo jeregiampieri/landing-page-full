@@ -157,4 +157,47 @@ los estilos que coloque en esta @media */
         text-align: center;
     }
 
+    .navbar-list{
+        /* Esto es para sacarlo del flujo del documento (es decir,
+        ya no ocupa espacio como los elementos comunes)*/
+        position: absolute;
+        top: 65px;
+        width: 90%;
+        border: 2px solid rgba(0, 41, 61, 1);
+        border-top: 0;
+        left: 5%;
+        right: 5%;
+        /* Ni hace falta que le ponga el display:flex, ya que todo esto
+        eso se esta heredando desde el style.css, por lo tanto solo coloco
+        lo que necesito */
+        flex-direction: column;
+        background-color: #151615;
+        /* Arriba a la derecha, arriba a la izquierda, abajo a la derecha, abajo a la izquierda */
+        border-radius: 0px 0px 15px 15px;
+        padding: 40px 30px;
+        align-items: flex-start;
+        gap: 15px;
+        transform: translateY(-200%);
+        transition: all 0.5s ease;
+    }
+
+    .navbar-list a{
+        font-size: 17px;
+    }
+
+    .menu-label{
+        display: flex;
+        cursor: pointer;
+        order: 2;
+    }
+
+    .menu-label img{
+        width: 25px;
+        height: 20px;
+    }
+
+    #menu-toggle:checked + .navbar-list{
+        transform: translateY(0);
+    }
+
 }
