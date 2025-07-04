@@ -781,6 +781,10 @@ es el carrito */
     display: flex;
 }
 
+.mi-icono{
+    color: white;
+}
+
 .carrito-items img{
     width: auto;
     height: 70px;
