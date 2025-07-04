@@ -30,7 +30,8 @@ los estilos que coloque en esta @media */
         padding: 40px 30px;
         align-items: flex-start;
         gap: 15px;
-        display: none;
+        transform: translateY(-200%);
+        transition: all 0.5s ease;
     }
 
     .navbar-list a{
@@ -49,7 +50,7 @@ los estilos que coloque en esta @media */
     }
 
     #menu-toggle:checked + .navbar-list{
-        display: flex;
+        transform: translateY(0);
     }
 
     .hero-info{
