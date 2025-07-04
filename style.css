@@ -734,7 +734,8 @@ footer span{
     gap: 20px;
     /* Porque quiero el scroll unicamente en el eje vertical */
     overflow-y: scroll;
-    display: none;
+    transform: translate(200%);
+    transition: all 0.5s ease;
 }
 
 /* Estilado de la barra de navegación */
@@ -778,11 +779,14 @@ solamente lo mostramos cuando estamos en mobile/tablet */
 es decir, el elemento que le sigue al input en este caso que justamente
 es el carrito */
 #carrito-toggle:checked + .carrito-contenedor{
-    display: flex;
+    transform: translate(0);
 }
 
 .mi-icono{
     color: white;
+    padding: 5px;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 .carrito-items img{
