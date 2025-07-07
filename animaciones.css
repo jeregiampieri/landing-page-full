@@ -42,6 +42,8 @@ html{
 
 
 /* Animaciones */
+
+/* Para la opacidad */
 @keyframes fade{
     from {
         opacity: 0;
@@ -51,6 +53,7 @@ html{
     }
 }
 
+/* Desplazamiento vertical desde abajo hacia arriba*/
 @keyframes slide-up{
     from{
         transform:translateY(100px);
@@ -60,6 +63,7 @@ html{
     }
 }
 
+/* Desplazamiento horizontal */
 @keyframes slide-right{
     from{
         transform:translateX(100px);
@@ -68,3 +72,89 @@ html{
         transform: translateX(0);
     }
 }
+
+/* Animacion al h1 de hero-info */
+.hero-info h1{
+    /* la animacion que queres usar, el tiempo, el tipo */
+    animation: fade 1s ease, slide-up 1.3s ease;
+}
+
+/* Animacion al parrafo (p) del hero-info */
+.hero-info p{   
+    opacity: 0;
+    /* El fowards es para indicar que el elemento se va a quedar
+    en el 'estado' de to */
+    animation: fade 1s ease forwards, slide-up 1.3s ease;
+    /* animation-delay: 0.3s; */
+}
+
+.hero-card{
+    opacity: 0;
+    animation: fade 1.2s ease forwards, slide-right 1.2s ease-in-out;
+    animation-delay: 0.2s;
+}
+
+/* Animacion del boton */
+.hero-info a{
+    opacity: 0;
+    /* El fowards es para indicar que el elemento se va a quedar
+    en el 'estado' de to */
+    animation: fade 1s ease forwards, slide-up 1.3s ease;
+    /* animation-delay: 0.3s; */
+}
+
+/* Animaciones para la seccion de info */
+#info h1{
+    opacity: 0;
+    animation: fade 1.2s ease forwards, slide-up 1.2s ease-in-out;
+    /* animation-delay: 0.1s; */
+}
+
+/* Si quisiera hacer animaciones en las 3 cards que estan dentro del info
+puedo hacerlo usando la pseudoclase nth-child, el cual me permite referenciar
+a los elementos hijos que se encuentran dentro del contenedor padre,
+nth-child(1) es para hacer referencia al primer hijo, (2) al segundo, etc */
+
+/* Animaciones para img de cards de product */
+.productos-card1 img{
+    transition: all 0.3s linear;
+}
+.productos-card1 img:hover{
+    /* Hace que la imagen se agrande 1.02 de su escala */
+    scale: 1.02;
+}
+
+/* Animacion de typing (donde esta la palabra Crypto) */
+@keyframes blink{
+    to{
+        background: transparent;
+        opacity: 0;
+    }
+}
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
+}
+
+.hero-info h1 span{
+    position: relative;
+    background: #01578c;
+    background: linear-gradient(90deg,rgba(1, 87, 140, 1) 0%, rgba(4, 127, 194, 1) 73%, rgba(0, 112, 181, 1) 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hero-info h1 span::before,
+.hero-info h1 span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
