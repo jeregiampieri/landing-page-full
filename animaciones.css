@@ -168,5 +168,5 @@ nth-child(1) es para hacer referencia al primer hijo, (2) al segundo, etc */
     background: linear-gradient(90deg,rgba(1, 87, 140, 1) 0%, rgba(4, 127, 194, 1) 73%, rgba(0, 112, 181, 1) 100%);
     animation: typewriter 1.2s 0.5s steps(6) forwards, blink 0.8s infinite;
 }
-
+/* Finalizaciones de animaciones */
 
