@@ -157,4 +157,16 @@ nth-child(1) es para hacer referencia al primer hijo, (2) al segundo, etc */
     bottom: 0;
 }
 
+.hero-info h1 span::before{
+    background-color: #131415;
+    animation: typewriter 1.2s 0.5s steps(6) forwards;
+}
+
+.hero-info h1 span::after{
+    width: 0.1rem;
+    background: #01578c;
+    background: linear-gradient(90deg,rgba(1, 87, 140, 1) 0%, rgba(4, 127, 194, 1) 73%, rgba(0, 112, 181, 1) 100%);
+    animation: typewriter 1.2s 0.5s steps(6) forwards, blink 0.8s infinite;
+}
+
 
